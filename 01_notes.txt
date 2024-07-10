@@ -1,0 +1,73 @@
+                          Backend Development
+                          2 major component  
+   1st = A programming language 
+   Java , js,php ,c++ - on framework
+
+
+   2nd   = A database  
+   MOngo , My Sql, sqlite         
+
+
+
+
+   Server = ek software hai  means jo serve kar raha hai
+
+   img2 me jo white color se src 
+   ke under index , app , constants jo hai vo file hai
+
+   and jo yellow se likha vo directories hai
+
+
+
+   Express4.19.2
+Fast, unopinionated, minimalist web framework for Node.js
+
+package.json me comment allows nhi hai 
+ "scripts": {
+    "start": "node index.js"
+  },  isse change kar skte hai package.json file me to run thi app  
+
+  
+const port = 4000    ham iss port o change kar sakte hai 
+There are many virtual ports, with port numbers ranging from 0 to 65535.
+
+app.get('/', (req, res) => {      ye ek call back function hai jo response and request leta hai jise hame bahut saare methods mil 
+                                   jati hai odne ke liye express ki website se par lena
+  res.send('Hello World!')
+});
+
+-------------------------------------------------------
+
+install .dotenv package
+make .env file
+
+
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+this process.env.PORT is step to active env so this small make the this production level
+
+sensitive information hame .env file me dalni hai for ex passwprd , login credentials
+
+
+________________________________________________________________________________________
+
+Deployment tool or the software
+
+
+1. AWS CodeDeploy
+2. Digital Ocean
+3. railway
+4. seenode
+5. render
+6. cyclic.sh
+
+
+
+for deploy first send to the github 
+than use any the deploy software and deploy the code 
+
+ app.get('/github', (req,res)=>{
+        res.json(githubData)     // this line we leran by research the res methods means what we can by knowing the response method this given on the express
+      })
